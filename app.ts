@@ -41,4 +41,24 @@
  }
 
 console.log(person.age);
+
+const person1={
+    name:"isuru",
+    age:20,
+    hobies:["cricket", "volley ball", "sdfg"]
+}
+
+// for(const hobby of person1.hobies){
+//     console.log(hobby);
+// }
+
+person1.hobies.map((item=>{
+    console.log(item);
+})) ;
+
+
+let arr1=[2,6,9,8,9];
+let arr2=[1];
+ 
+console.log(...arr1,...arr2);
  

@@ -1,4 +1,9 @@
 // console.log("hel cript");
+var __spreadArray = (this && this.__spreadArray) || function (to, from) {
+    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
+        to[j] = from[i];
+    return to;
+};
 // //  let newArray:string[]=[];
 // //  newArray=["isuru",1 ]
 // let result;
@@ -23,3 +28,17 @@ var person = {
     age: 20
 };
 console.log(person.age);
+var person1 = {
+    name: "isuru",
+    age: 20,
+    hobies: ["cricket", "volley ball", "sdfg"]
+};
+// for(const hobby of person1.hobies){
+//     console.log(hobby);
+// }
+person1.hobies.map((function (item) {
+    console.log(item);
+}));
+var arr1 = [2, 6, 9, 8, 9];
+var arr2 = [1];
+console.log.apply(console, __spreadArray(__spreadArray([], arr1), arr2));
