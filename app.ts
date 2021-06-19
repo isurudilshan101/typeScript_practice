@@ -32,10 +32,13 @@
 
 //  generateError('isuru',500);
 
- const person ={
-     name:"isuru",
+ const person : {
+     name:string,
+     age:number
+ }={
+     name: "isuru",
      age:20
+ }
 
- };
-console.log(person.mname);
+console.log(person.age);
  
